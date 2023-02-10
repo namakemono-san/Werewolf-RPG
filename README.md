@@ -1,5 +1,5 @@
 # Werewolf RPG
-### ※ まだ未完成です。
+### ※ まだ未完成です。 (WIP)
 
 人狼RPGの再現データパックです。  
 データパックを作ったり公開するのは初めてなため  
@@ -18,4 +18,4 @@ Discord: なまけもの#2525
 Twitter: https://twitter.com/namakemono_san5
 
 ## ライセンス
-MIT License
+CC BY-SA 4.0
