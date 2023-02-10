@@ -18,4 +18,4 @@ Discord: なまけもの#2525
 Twitter: https://twitter.com/namakemono_san5
 
 ## ライセンス
-MIT License
+CC BY-SA 4.0 
