@@ -1,0 +1,2 @@
+execute if score @s fortune_teller_heart_used matches 0 run title @s actionbar ["",{"text":"占い可能回数："},{"text":"残り","color":"blue"},{"score":{"name":"@s","objective":"fortune_teller_heart"},"color":"blue"},{"text":"回","color":"blue"}]
+execute if score @s fortune_teller_heart_used matches 1 run title @s actionbar ["",{"text":"占い可能回数："},{"text":"残り","color":"gray","strikethrough":true},{"score":{"name":"@s","objective":"fortune_teller_heart"},"color":"gray","strikethrough":true},{"text":"回","color":"gray","strikethrough":true}]

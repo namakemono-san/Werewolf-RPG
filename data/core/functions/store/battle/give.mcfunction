@@ -1,0 +1,1 @@
+give @s minecraft:armor_stand{display:{Name:'{"text":"村人召喚【戦闘】","color":"white","italic":false}'},EntityTag:{Tags:["battle_villager"]}}

@@ -1,0 +1,17 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": ""
+            },
+            {
+                "text": "クリックで戻る",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "replace": false
+    }
+]

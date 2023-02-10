@@ -1,0 +1,1 @@
+execute as @a[tag=op] at @s if score @s menu_page matches 18 unless entity @a[nbt={EnderItems:[{Slot:10b,id:"minecraft:spyglass"}]}] run function admin:settings_menu/menu/extension/spyglass

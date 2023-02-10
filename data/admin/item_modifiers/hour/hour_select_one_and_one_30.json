@@ -1,0 +1,61 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "初日昼：",
+                    "color": "gray",
+                    "italic": false,
+                    "underlined": false
+                },
+                {
+                    "score": {
+                        "name": "first_day_min",
+                        "objective": "settings"
+                    },
+                    "color": "gray",
+                    "italic": false,
+                    "underlined": false
+                },
+                {
+                    "text": "分",
+                    "color": "gray",
+                    "italic": false,
+                    "underlined": false
+                }
+            ],
+            [
+                {
+                    "text": "一日：",
+                    "color": "white",
+                    "italic": false,
+                    "underlined": true
+                },
+                {
+                    "score": {
+                        "name": "one_day_min",
+                        "objective": "settings"
+                    },
+                    "color": "white",
+                    "italic": false,
+                    "underlined": true
+                },
+                {
+                    "text": "分",
+                    "color": "white",
+                    "italic": false,
+                    "underlined": true
+                },
+                {
+                    "text": "30秒",
+                    "color": "gray",
+                    "italic": false,
+                    "underlined": true
+                }
+            ]
+        ],
+        "replace": true
+    }
+]

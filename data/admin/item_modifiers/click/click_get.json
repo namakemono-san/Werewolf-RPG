@@ -1,0 +1,17 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": ""
+            },
+            {
+                "text": "クリックで入手",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "replace": false
+    }
+]

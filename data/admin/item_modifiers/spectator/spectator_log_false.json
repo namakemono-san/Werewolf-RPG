@@ -1,0 +1,22 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": ""
+            },
+            {
+                "text": "死亡ログ：",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "無効",
+                "color": "red",
+                "italic": false
+            }
+        ],
+        "replace": false
+    }
+]

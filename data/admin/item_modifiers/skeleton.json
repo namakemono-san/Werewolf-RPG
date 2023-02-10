@@ -1,0 +1,55 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "出現率：",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "score": {
+                        "name": "percent",
+                        "objective": "skeleton"
+                    },
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "%",
+                    "color": "white",
+                    "italic": false
+                }
+            ],
+            [
+                {
+                    "text": "召喚数：",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "score": {
+                        "name": "max",
+                        "objective": "skeleton"
+                    },
+                    "italic": false
+                },
+                {
+                    "text": "/",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "score": {
+                        "name": "pre_max",
+                        "objective": "skeleton"
+                    },
+                    "color": "white"
+                }
+            ]
+        ],
+        "replace": true
+    }
+]

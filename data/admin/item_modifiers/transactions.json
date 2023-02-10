@@ -1,0 +1,89 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "人狼",
+                    "color": "dark_red",
+                    "italic": false
+                },
+                {
+                    "text": "x",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "score": {
+                        "name": "werewolf",
+                        "objective": "divide"
+                    },
+                    "color": "gray",
+                    "italic": false
+                }
+            ],
+            [
+                {
+                    "text": "共犯者",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "x",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "score": {
+                        "name": "accomplice",
+                        "objective": "divide"
+                    },
+                    "color": "gray",
+                    "italic": false
+                }
+            ],
+            [
+                {
+                    "text": "吸血鬼",
+                    "color": "purple",
+                    "italic": false
+                },
+                {
+                    "text": "x",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "score": {
+                        "name": "vampire",
+                        "objective": "divide"
+                    },
+                    "color": "gray",
+                    "italic": false
+                }
+            ],
+            [
+                {
+                    "text": "狼憑き",
+                    "color": "dark_purple",
+                    "italic": false
+                },
+                {
+                    "text": "x",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "score": {
+                        "name": "wolf_possession",
+                        "objective": "divide"
+                    },
+                    "color": "gray",
+                    "italic": false
+                }
+            ]
+        ],
+        "replace": true
+    }
+]

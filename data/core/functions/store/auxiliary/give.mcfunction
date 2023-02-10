@@ -1,0 +1,1 @@
+give @s minecraft:armor_stand{display:{Name:'{"text":"村人召喚【補助】","color":"white","italic":false}'},EntityTag:{Tags:["auxiliary_villager"]}}

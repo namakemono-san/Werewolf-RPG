@@ -1,0 +1,1 @@
+give @s minecraft:armor_stand{display:{Name:'{"text":"スケルトンの出現位置"}'},EntityTag:{Marker:true,Invisible:true,NoGravity:true,Tags:["skeleton_spawner"]}}
