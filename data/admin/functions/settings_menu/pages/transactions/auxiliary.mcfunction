@@ -9,13 +9,20 @@ item replace entity @s enderchest.5 with lime_stained_glass_pane{display:{Name:'
 item replace entity @s enderchest.6 with lime_stained_glass_pane{display:{Name:'{"text":"+1","italic":false,"color":"white"}'},NoStack:7,Menu:1b}
 item replace entity @s enderchest.7 with lime_stained_glass_pane{display:{Name:'{"text":"+1","italic":false,"color":"white"}'},NoStack:8,Menu:1b}
 
-item replace entity @s enderchest.10 with heart_of_the_sea{display:{Name:'{"text":"占い師の心","italic":false,"color":"white"}'},NoStack:11,Menu:1b}
-item replace entity @s enderchest.11 with gunpowder{display:{Name:'{"text":"霊媒師の遺灰","italic":false,"color":"white"}'},NoStack:12,Menu:1b}
-item replace entity @s enderchest.12 with golden_horse_armor{display:{Name:'{"text":"騎士の加護","italic":false,"color":"white"}'},NoStack:13,Menu:1b}
-item replace entity @s enderchest.13 with end_crystal{display:{Name:'{"text":"共犯者の目","italic":false,"color":"white"}'},NoStack:14,Menu:1b}
-item replace entity @s enderchest.14 with nether_star{display:{Name:'{"text":"聖なる十字架","italic":false,"color":"white"}'},NoStack:15,Menu:1b}
-item replace entity @s enderchest.15 with sunflower{display:{Name:'{"text":"プロビデンスの眼光","italic":false}'},NoStack:16,Menu:1b}
-item replace entity @s enderchest.16 with paper{display:{Name:'{"text":"天啓の呪符","italic":false}'},NoStack:17,Menu:1b}
+item replace entity @s enderchest.10 with heart_of_the_sea{NoStack:11,Menu:1b}
+item modify entity @s enderchest.10 admin:transactions/auxiliary/name_fortune_teller_heart
+item replace entity @s enderchest.11 with gunpowder{NoStack:12,Menu:1b}
+item modify entity @s enderchest.11 admin:transactions/auxiliary/name_medium_ashes
+item replace entity @s enderchest.12 with golden_horse_armor{NoStack:13,Menu:1b}
+item modify entity @s enderchest.12 admin:transactions/auxiliary/name_the_blessing_of_knighthood
+item replace entity @s enderchest.13 with end_crystal{NoStack:14,Menu:1b}
+item modify entity @s enderchest.13 admin:transactions/auxiliary/name_eyes_of_an_accomplice
+item replace entity @s enderchest.14 with nether_star{NoStack:15,Menu:1b}
+item modify entity @s enderchest.14 admin:transactions/auxiliary/name_holy_cross
+item replace entity @s enderchest.15 with sunflower{NoStack:16,Menu:1b}
+item modify entity @s enderchest.15 admin:transactions/auxiliary/name_eye_of_providence
+item replace entity @s enderchest.16 with paper{NoStack:17,Menu:1b}
+item modify entity @s enderchest.16 admin:transactions/auxiliary/name_spellbook_of_tianxue
 
 item replace entity @s enderchest.19 with red_stained_glass_pane{display:{Name:'{"text":"-1","italic":false}'},NoStack:20,Menu:1b}
 item replace entity @s enderchest.20 with red_stained_glass_pane{display:{Name:'{"text":"-1","italic":false}'},NoStack:21,Menu:1b}

@@ -47,25 +47,29 @@
     scoreboard objectives add skeleton_attacked dummy
 
 ## 初期値
-    scoreboard players enable @a items
-    scoreboard players enable @a options
+    ### トリガー
+        scoreboard players enable @a items
+        scoreboard players enable @a options
 
-    scoreboard players set @a menu_page 0
-    execute unless score spyglass settings matches 0.. run scoreboard players set spyglass settings 1
-    execute as @a unless score @s skeleton_attack matches 0.. run scoreboard players set @s skeleton_attack 2
+    ### 役職数
+        execute unless score werewolf divide matches 0.. run scoreboard players set werewolf divide 1
+        execute unless score vampire divide matches 0.. run scoreboard players set vampire divide 0
+        execute unless score accomplice divide matches 0.. run scoreboard players set accomplice divide 0
+        execute unless score wolf_possession divide matches 0.. run scoreboard players set wolf_possession divide 0
 
-    execute unless score werewolf divide matches 0.. run scoreboard players set werewolf divide 1
-    execute unless score vampire divide matches 0.. run scoreboard players set vampire divide 0
-    execute unless score accomplice divide matches 0.. run scoreboard players set accomplice divide 0
-    execute unless score wolf_possession divide matches 0.. run scoreboard players set wolf_possession divide 0
+    ### 設定
+        scoreboard players set @a menu_page 0
+        execute as @a unless score @s skeleton_attack matches 0.. run scoreboard players set @s skeleton_attack 2
+        execute unless score spyglass settings matches 0.. run scoreboard players set spyglass settings 1
+        execute unless score first_day settings matches 0.. run scoreboard players set first_day settings 600
+        execute unless score one_day settings matches 0.. run scoreboard players set one_day settings 2400
 
-    scoreboard players set first_day settings 600
-    scoreboard players set one_day settings 2400
-    scoreboard players set date temporary 0
-    scoreboard players set hour temporary 0
-    scoreboard players set timer temporary 0
-    scoreboard players set start temporary 0
-    scoreboard players set deaths temporary 0
+    ### 一時的
+        scoreboard players set date temporary 0
+        scoreboard players set hour temporary 0
+        scoreboard players set timer temporary 0
+        scoreboard players set start temporary 0
+        scoreboard players set deaths temporary 0
 
 ## ゲームルールの変更
     gamerule keepInventory true

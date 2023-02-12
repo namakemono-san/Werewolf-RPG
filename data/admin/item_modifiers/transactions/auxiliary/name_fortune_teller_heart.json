@@ -1,0 +1,29 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "占い師の目",
+                "color": "white",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "text": " ♦",
+                "color": "green",
+                "bold": true,
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "fortune_teller_heart",
+                    "objective": "price"
+                },
+                "color": "green",
+                "bold": false,
+                "italic": false
+            }
+        ]
+    }
+]

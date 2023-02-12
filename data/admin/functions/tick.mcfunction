@@ -1,27 +1,25 @@
 ## 設定用メニュー
-
-### 壊れないようにする
-    # execute as @a[tag=op] at @s run function admin:settings_menu/pages/clear
-    # execute as @a[tag=op] at @s if score @s menu_page matches 0 run function admin:settings_menu/pages/main
+    execute as @a[tag=!op] run function admin:settings_menu/pages/remove
 
 ### メインメニューの検知
-    execute as @a[tag=op] at @s if score @s menu_page matches 0 run function admin:settings_menu/detection/main
+    execute as @a[tag=op] if score @s menu_page matches 0 run function admin:settings_menu/detection/main
 
 ### 役職設定画面の検知
-    execute as @a[tag=op] at @s if score @s menu_page matches 10 run function admin:settings_menu/detection/position
+    execute as @a[tag=op] if score @s menu_page matches 10 run function admin:settings_menu/detection/position
 
 ### 価格設定画面の検知
-    execute as @a[tag=op] at @s if score @s menu_page matches 11 run function admin:settings_menu/detection/transactions/
-    execute as @a[tag=op] at @s if score @s menu_page matches 12 run function admin:settings_menu/detection/transactions/battle
+    execute as @a[tag=op] if score @s menu_page matches 11 run function admin:settings_menu/detection/transactions/
+    execute as @a[tag=op] if score @s menu_page matches 12 run function admin:settings_menu/detection/transactions/battle
+    execute as @a[tag=op] if score @s menu_page matches 13 run function admin:settings_menu/detection/transactions/auxiliary
 
 ## 管理アイテム画面の検知
-    execute as @a[tag=op] at @s if score @s menu_page matches 17 run function admin:settings_menu/detection/management
+    execute as @a[tag=op] if score @s menu_page matches 17 run function admin:settings_menu/detection/management
 
 ## 拡張機能画面の検知
-    execute as @a[tag=op] at @s if score @s menu_page matches 18 run function admin:settings_menu/detection/extension
+    execute as @a[tag=op] if score @s menu_page matches 18 run function admin:settings_menu/detection/extension
 
 ### 戻るボタン
-    execute as @a[tag=op] at @s unless score @s menu_page matches 0 unless entity @a[nbt={EnderItems:[{Slot:0b,id:"minecraft:feather"}]}] run function admin:settings_menu/menu/main
+    execute as @a[tag=op] unless score @s menu_page matches 0 unless entity @s[nbt={EnderItems:[{Slot:0b,id:"minecraft:feather"}]}] run function admin:settings_menu/menu/main
 
 ### 取ったアイテムを消す
     execute as @a[tag=op] run clear @s minecraft:stone_axe{Menu:1b}

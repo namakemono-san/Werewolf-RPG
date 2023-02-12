@@ -1,7 +1,7 @@
-## 定数スコアの設定(一度きり)
-    scoreboard players set #-1000 Constant -1000
-    scoreboard players set #-1 Constant -1
+## 定数スコアの設定
+    scoreboard players set #1 Constant 1
     scoreboard players set #2 Constant 2
+    scoreboard players set #3 Constant 3
     scoreboard players set #4 Constant 4
     scoreboard players set #5 Constant 5
     scoreboard players set #6 Constant 6
@@ -31,13 +31,4 @@
     scoreboard players set #256 Constant 256
     scoreboard players set #400 Constant 400
     scoreboard players set #512 Constant 512
-    scoreboard players set #700 Constant 700
-    scoreboard players set #1000 Constant 1000
     scoreboard players set #1200 Constant 1200
-    scoreboard players set #2000 Constant 2000
-    scoreboard players set #65536 Constant 65536
-    scoreboard players set #2^17 Constant 131072
-    scoreboard players set #10^6 Constant 1000000
-    scoreboard players set #2^20 Constant 1048576
-    scoreboard players set #2^21 Constant 2097152
-    scoreboard players set #2^23 Constant 8388608

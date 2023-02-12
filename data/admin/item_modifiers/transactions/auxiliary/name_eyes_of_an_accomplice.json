@@ -1,0 +1,29 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "共犯者の目",
+                "color": "white",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "text": " ♦",
+                "color": "green",
+                "bold": true,
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "eyes_of_an_accomplice",
+                    "objective": "price"
+                },
+                "color": "green",
+                "bold": false,
+                "italic": false
+            }
+        ]
+    }
+]

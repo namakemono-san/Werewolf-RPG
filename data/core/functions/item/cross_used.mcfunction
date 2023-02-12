@@ -1,5 +1,5 @@
 ## 削除
-    clear @s minecraft:nether_star 1
+    execute as @s[nbt={SelectedItem:{id:"minecraft:nether_star"}}] run item replace entity @s weapon.mainhand with minecraft:air
 
 ## リセット
     advancement revoke @s only core:cross_used

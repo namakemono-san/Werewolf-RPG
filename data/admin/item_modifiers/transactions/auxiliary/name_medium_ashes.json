@@ -1,0 +1,29 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "霊媒師の遺灰",
+                "color": "white",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "text": " ♦",
+                "color": "green",
+                "bold": true,
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "medium_ashes",
+                    "objective": "price"
+                },
+                "color": "green",
+                "bold": false,
+                "italic": false
+            }
+        ]
+    }
+]

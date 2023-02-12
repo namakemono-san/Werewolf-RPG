@@ -17,7 +17,7 @@
     function core:game/noon_axe
     function core:item/stan_grenade
     execute as @e[type=minecraft:trident] run data modify entity @s Trident.tag.Damage set value 248
-    # execute as @a[scores={lance=1}] at @s run effect give @s weakness 1 0 false
+    execute as @a[scores={lance=1}] at @s run particle minecraft:entity_effect ~ ~0.7 ~ 0.2 0.2 0.2 1 0 force @a
     execute as @a[scores={spirit_medium=1..}] run function core:item/spirit_medium
     execute as @a[scores={providence=1..}] run function core:item/providence
     execute as @a[scores={accomplice=1..}] run function core:item/accomplice

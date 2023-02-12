@@ -1,0 +1,29 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "騎士の加護",
+                "color": "white",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "text": " ♦",
+                "color": "green",
+                "bold": true,
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "the_blessing_of_knighthood",
+                    "objective": "price"
+                },
+                "color": "green",
+                "bold": false,
+                "italic": false
+            }
+        ]
+    }
+]

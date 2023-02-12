@@ -4,10 +4,13 @@
 
 ## スコアボードの処理
     scoreboard players set hour temporary 0
+
+## リセット
     scoreboard players set @a axe_use 0
     scoreboard players set @a fortune_teller_heart_used 0
 
-## 騎士の加護の効果切れ
+## 効果切れ
+    scoreboard players set @a tianxue_use 0
     scoreboard players set @a the_blessing_of_knighthood 0
 
 ## ボスバーの表示処理

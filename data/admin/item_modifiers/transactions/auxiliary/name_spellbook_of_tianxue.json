@@ -1,0 +1,29 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "天啓の呪符",
+                "color": "white",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "text": " ♦",
+                "color": "green",
+                "bold": true,
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "spellbook_of_tianxue",
+                    "objective": "price"
+                },
+                "color": "green",
+                "bold": false,
+                "italic": false
+            }
+        ]
+    }
+]

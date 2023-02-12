@@ -32,7 +32,7 @@ scoreboard players reset @s PlayerID
     execute as @s if score @s PlayerID matches 2 run data merge block ~ ~ ~ {Text2:'{"selector":"@a[scores={PlayerID=2}]","color":"black","italic":false,"underlined":true,"clickEvent":{"action":"run_command","value":"/function core:sign/action/2"}}',Text4:'{"text":"< 右ボタン >","color":"black","italic":false}'}
     execute as @s if score @s PlayerID matches 1 run data merge block ~ ~ ~ {Text2:'{"selector":"@a[scores={PlayerID=1}]","color":"black","italic":false,"underlined":true,"clickEvent":{"action":"run_command","value":"/function core:sign/action/1"}}',Text4:'{"text":"< 右ボタン >","color":"black","italic":false}'}
 
-## プレイヤーの頭を設置
+## 防具立てを設置
     execute as @s if score @s PlayerID matches 14 run execute if block ~ ~ ~ minecraft:oak_sign run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID14"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
     execute as @s if score @s PlayerID matches 13 run execute if block ~ ~ ~ minecraft:oak_sign run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID13"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
     execute as @s if score @s PlayerID matches 12 run execute if block ~ ~ ~ minecraft:oak_sign run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID12"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
@@ -47,6 +47,22 @@ scoreboard players reset @s PlayerID
     execute as @s if score @s PlayerID matches 3 run execute if block ~ ~ ~ minecraft:oak_sign run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID3"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
     execute as @s if score @s PlayerID matches 2 run execute if block ~ ~ ~ minecraft:oak_sign run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID2"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
     execute as @s if score @s PlayerID matches 1 run execute if block ~ ~ ~ minecraft:oak_sign run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID1"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
+
+## 向き変更
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID1] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID1] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID2] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID2] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID3] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID3] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID4] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID4] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID5] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID5] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID6] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID6] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID7] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID7] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID8] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID8] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID9] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID9] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID10] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID10] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID11] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID11] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID12] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID12] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID13] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID13] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
+    # execute as @e[type=minecraft:armor_stand,tag=PlayerID14] at @s run tp @e[type=minecraft:armor_stand,tag=PlayerID14] ~ ~ ~ facing entity @e[type=minecraft:armor_stand,tag=spawn,limit=1]
 
 ## 変換
     execute as @s if score @s PlayerID matches 14 run loot replace entity @e[type=armor_stand,tag=PlayerID14] armor.head loot core:player_head

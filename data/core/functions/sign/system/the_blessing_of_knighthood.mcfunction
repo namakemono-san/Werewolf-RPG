@@ -7,4 +7,4 @@
     execute as @s[team=Villager] run scoreboard players set @s the_blessing_of_knighthood 1
 
 ## リセット
-    clear @a[tag=clicked] golden_horse_armor 1
+    execute as @a[tag=clicked,nbt={SelectedItem:{id:"minecraft:golden_horse_armor"}}] run item replace entity @s weapon.mainhand with minecraft:air
