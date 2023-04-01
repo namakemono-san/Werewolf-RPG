@@ -1,0 +1,6 @@
+tellraw @a [""]
+tellraw @s ["",{"text":" ================================ "}]
+tellraw @s ["",{"text":"   エラー","color":"yellow","bold":true}]
+tellraw @a ["",{"text":"       役職数が不正です。"}]
+tellraw @s ["",{"text":" ================================ "}]
+tellraw @a [""]

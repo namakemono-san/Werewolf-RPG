@@ -1,7 +1,7 @@
-# Werewolf RPG
+# Minecraft Werewolf RPG
 ### ※ まだ未完成です。 (WIP)
 
-人狼RPGの再現データパックです。  
+ワイテルズ企画の人狼RPG再現データパックです。  
 データパックを作ったり公開するのは初めてなため  
 色々バグやコードの汚さなどはありますがご了承下さい。
 
@@ -18,9 +18,9 @@
   人狼陣営で協力します
   誰が人狼か分かりません
 - 吸血鬼  
-  村人歌人廊下のどちらかが
+  村人陣営か人狼陣営のどちらかが
   全滅したとき、生存していたら単独勝利。
-  よるは無敵です。
+  夜は無敵です。
 - 狼憑き  
   占われたら人狼と出ますが
   村人陣営です。
@@ -43,18 +43,10 @@ tag @s add op
 
 ゲームの開始は以下のコマンドから可能です。
 ```
-function #core:start
+function #mwr:start
 ```
 他に、設定用アイテムから入手できるコマンドブロックと  
 管理用の本から開始可能です。
-
-## 謝辞
-以下のライブラリを使用させていただいてます。
-
-#### [赤石愛](https://twitter.com/AiAkaishi)氏
-* [Oh! My Dat!](https://github.com/Ai-Akaishi/OhMyDat)
-* [Close Detector](https://github.com/Ai-Akaishi/CloseDetector)
-* [Player Item Tuner](https://github.com/Ai-Akaishi/PlayerItemTuner)
 
 ## 連絡はこちら
 Discord: なまけもの#2525  

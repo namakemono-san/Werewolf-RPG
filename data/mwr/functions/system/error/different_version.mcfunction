@@ -1,0 +1,7 @@
+tellraw @a [""]
+tellraw @s ["",{"text":" ================================ "}]
+tellraw @s ["",{"text":"   エラー","color":"yellow","bold":true}]
+tellraw @a ["",{"text":"       ゲームのバージョンと"}]
+tellraw @a ["",{"text":"       サーバーのバージョンが異なります。"}]
+tellraw @s ["",{"text":" ================================ "}]
+tellraw @a [""]

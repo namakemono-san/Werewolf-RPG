@@ -1,5 +1,5 @@
 ## 付与
-    function core:sign/give
+    function mwr:sign/give
 
 ## リセット
     scoreboard players set @s options 0

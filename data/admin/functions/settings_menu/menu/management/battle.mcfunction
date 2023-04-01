@@ -2,7 +2,7 @@
     playsound minecraft:entity.item.pickup master namakemono_san ~ ~ ~ 0.5
 
 ## 取得
-    function core:store/battle/give
+    function mwr:system/store/battle/give
 
 ## 切り替え
     function admin:settings_menu/pages/clear

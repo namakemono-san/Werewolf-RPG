@@ -1,1 +1,0 @@
-execute as @e[type=armor_stand,tag=skeleton_spawner] if predicate core:ske run execute at @s run summon skeleton ~ ~ ~ {DeathLootTable:""}

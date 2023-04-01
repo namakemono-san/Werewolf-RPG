@@ -1,0 +1,6 @@
+tellraw @a [""]
+tellraw @s ["",{"text":" ================================ "}]
+tellraw @s ["",{"text":"   エラー","color":"yellow","bold":true}]
+tellraw @a ["",{"text":"       すでにゲームが開始中です。"}]
+tellraw @s ["",{"text":" ================================ "}]
+tellraw @a [""]

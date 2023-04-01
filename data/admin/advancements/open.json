@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "admin:openable"
+                    }
+                ],
+                "location": {
+                    "block": {
+                        "blocks": [
+                            "minecraft:ender_chest"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "admin:open"
+    }
+}

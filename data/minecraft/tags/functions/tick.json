@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "core:tick"
+        "mwr:tick"
     ]
 }

@@ -1,0 +1,33 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": {
+                    "type": "minecraft:player",
+                    "team": "Vampire"
+                },
+                "damage": {
+                    "type": {
+                        "is_explosion": false,
+                        "is_fire": false,
+                        "is_magic": false,
+                        "is_projectile": false,
+                        "source_entity": {
+                            "equipment": {
+                                "mainhand": {
+                                    "items": [
+                                        "minecraft:nether_star"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mwr:system/item/cross_kill"
+    }
+}

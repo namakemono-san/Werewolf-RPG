@@ -1,1 +1,2 @@
 execute if score @s menu_page matches 18 unless entity @s[nbt={EnderItems:[{Slot:10b,id:"minecraft:spyglass"}]}] run function admin:settings_menu/menu/extension/spyglass
+execute if score @s menu_page matches 18 unless entity @s[nbt={EnderItems:[{Slot:11b,id:"minecraft:feather"}]}] run function admin:settings_menu/menu/extension/speed

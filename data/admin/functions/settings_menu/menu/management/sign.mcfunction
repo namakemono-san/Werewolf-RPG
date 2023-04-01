@@ -2,7 +2,7 @@
     playsound minecraft:entity.item.pickup master namakemono_san ~ ~ ~ 0.5
 
 ## 取得
-    function core:sign/give
+    function mwr:system/sign/give
 
 ## 切り替え
     function admin:settings_menu/pages/clear

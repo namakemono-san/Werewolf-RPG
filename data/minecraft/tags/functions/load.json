@@ -1,7 +1,6 @@
 {
     "replace": false,
     "values": [
-        "core:load",
-        "oh_my_dat:sys/load"
+        "mwr:load"
     ]
 }
