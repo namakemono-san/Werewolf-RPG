@@ -1,0 +1,2 @@
+execute if score @s menu_page matches 6 unless entity @s[nbt={EnderItems:[{Slot:10b,id:"minecraft:spyglass"}]}] run function mwr:system/settings/enderchest/buttons/extension/spyglass
+execute if score @s menu_page matches 6 unless entity @s[nbt={EnderItems:[{Slot:11b,id:"minecraft:feather"}]}] run function mwr:system/settings/enderchest/buttons/extension/speed

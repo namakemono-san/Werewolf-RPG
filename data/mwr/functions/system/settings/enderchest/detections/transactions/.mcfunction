@@ -1,0 +1,3 @@
+execute if score @s menu_page matches 2 unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:bow"}]}] run function mwr:system/settings/enderchest/buttons/transactions/battle/
+execute if score @s menu_page matches 2 unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:heart_of_the_sea"}]}] run function mwr:system/settings/enderchest/buttons/transactions/auxiliary
+execute if score @s menu_page matches 2 unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:lime_stained_glass_pane"}]}] run function mwr:system/settings/enderchest/buttons/transactions/update

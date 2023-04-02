@@ -1,0 +1,8 @@
+execute as @s at @s if score @s menu_page matches 1 unless entity @s[nbt={EnderItems:[{Slot:2b,id:"minecraft:lime_stained_glass_pane"}]}] run function mwr:system/settings/enderchest/buttons/position/ww_add
+execute as @s at @s if score @s menu_page matches 1 unless entity @s[nbt={EnderItems:[{Slot:3b,id:"minecraft:lime_stained_glass_pane"}]}] run function mwr:system/settings/enderchest/buttons/position/a_add
+execute as @s at @s if score @s menu_page matches 1 unless entity @s[nbt={EnderItems:[{Slot:4b,id:"minecraft:lime_stained_glass_pane"}]}] run function mwr:system/settings/enderchest/buttons/position/v_add
+execute as @s at @s if score @s menu_page matches 1 unless entity @s[nbt={EnderItems:[{Slot:5b,id:"minecraft:lime_stained_glass_pane"}]}] run function mwr:system/settings/enderchest/buttons/position/wp_add
+execute as @s at @s if score @s menu_page matches 1 unless entity @s[nbt={EnderItems:[{Slot:20b,id:"minecraft:red_stained_glass_pane"}]}] run function mwr:system/settings/enderchest/buttons/position/ww_remove
+execute as @s at @s if score @s menu_page matches 1 unless entity @s[nbt={EnderItems:[{Slot:21b,id:"minecraft:red_stained_glass_pane"}]}] run function mwr:system/settings/enderchest/buttons/position/a_remove
+execute as @s at @s if score @s menu_page matches 1 unless entity @s[nbt={EnderItems:[{Slot:22b,id:"minecraft:red_stained_glass_pane"}]}] run function mwr:system/settings/enderchest/buttons/position/v_remove
+execute as @s at @s if score @s menu_page matches 1 unless entity @s[nbt={EnderItems:[{Slot:23b,id:"minecraft:red_stained_glass_pane"}]}] run function mwr:system/settings/enderchest/buttons/position/wp_remove

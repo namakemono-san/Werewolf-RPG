@@ -1,7 +1,0 @@
-execute if score @s menu_page matches 17 unless entity @s[nbt={EnderItems:[{Slot:10b,id:"minecraft:command_block"}]}] run function admin:settings_menu/menu/management/start
-execute if score @s menu_page matches 17 unless entity @s[nbt={EnderItems:[{Slot:11b,id:"minecraft:oak_sign"}]}] run function admin:settings_menu/menu/management/sign
-execute if score @s menu_page matches 17 unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:crossbow"}]}] run function admin:settings_menu/menu/management/crossbow
-execute if score @s menu_page matches 17 unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:armor_stand"}]}] run function admin:settings_menu/menu/management/battle
-execute if score @s menu_page matches 17 unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:armor_stand"}]}] run function admin:settings_menu/menu/management/auxiliary
-execute if score @s menu_page matches 17 unless entity @s[nbt={EnderItems:[{Slot:15b,id:"minecraft:armor_stand"}]}] run function admin:settings_menu/menu/management/spawn
-execute if score @s menu_page matches 17 unless entity @s[nbt={EnderItems:[{Slot:16b,id:"minecraft:writable_book"}]}] run function admin:settings_menu/menu/management/nickname

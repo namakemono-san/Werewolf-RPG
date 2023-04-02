@@ -1,3 +1,0 @@
-execute if score @s menu_page matches 11 unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:bow"}]}] run function admin:settings_menu/menu/transactions/battle/
-execute if score @s menu_page matches 11 unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:heart_of_the_sea"}]}] run function admin:settings_menu/menu/transactions/auxiliary
-execute if score @s menu_page matches 11 unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:lime_stained_glass_pane"}]}] run function admin:settings_menu/menu/transactions/update

@@ -14,13 +14,13 @@
     scoreboard objectives add items trigger
     scoreboard objectives add options trigger
 
-    scoreboard objectives add price dummy
-    scoreboard objectives add divide dummy
-    scoreboard objectives add settings dummy
-    scoreboard objectives add PlayerID dummy
-    scoreboard objectives add temporary dummy
-    scoreboard objectives add menu_page dummy
-    scoreboard objectives add death deathCount
+    scoreboard objectives add price dummy "価格設定"
+    scoreboard objectives add divide dummy "役職設定"
+    scoreboard objectives add settings dummy "設定"
+    scoreboard objectives add PlayerID dummy "プレイヤー"
+    scoreboard objectives add temporary dummy "一時的"
+    scoreboard objectives add menu_page dummy "メニュー"
+    scoreboard objectives add death deathCount "死亡数"
 
     function mwr:system/store/reset
 
@@ -29,25 +29,25 @@
     scoreboard players set #20 Constant 20
     scoreboard players set #1200 Constant 1200
 
-    scoreboard objectives add lance dummy
-    scoreboard objectives add axe_use dummy
-    scoreboard objectives add tianxue_use dummy
-    scoreboard objectives add stan_grenade dummy
-    scoreboard objectives add fortune_teller_heart dummy
-    scoreboard objectives add fortune_teller_heart_used dummy
-    scoreboard objectives add the_blessing_of_knighthood dummy
-    scoreboard objectives add tianxue minecraft.dropped:minecraft.paper
-    scoreboard objectives add spirit_medium minecraft.dropped:minecraft.gunpowder
-    scoreboard objectives add providence minecraft.dropped:minecraft.sunflower
-    scoreboard objectives add stan_grenade_use minecraft.used:minecraft.snowball
-    scoreboard objectives add accomplice minecraft.dropped:minecraft.end_crystal
+    scoreboard objectives add lance dummy "怨念の槍"
+    scoreboard objectives add axe_use dummy "人狼の斧の使用"
+    scoreboard objectives add tianxue_use dummy "天啓の呪符の使用"
+    scoreboard objectives add stan_grenade dummy "スタングレネード"
+    scoreboard objectives add fortune_teller_heart dummy "占いの心"
+    scoreboard objectives add fortune_teller_heart_used dummy "占いの心の使用"
+    scoreboard objectives add the_blessing_of_knighthood dummy "騎士の加護"
+    scoreboard objectives add tianxue minecraft.dropped:minecraft.paper "天啓の呪符の使用"
+    scoreboard objectives add spirit_medium minecraft.dropped:minecraft.gunpowder "霊媒師の遺灰の使用"
+    scoreboard objectives add providence minecraft.dropped:minecraft.sunflower "プロビデンスの眼光の使用"
+    scoreboard objectives add stan_grenade_use minecraft.used:minecraft.snowball "スタングレネードの使用"
+    scoreboard objectives add accomplice minecraft.dropped:minecraft.end_crystal "共犯者の目の使用"
 
-    scoreboard objectives add health health
-    scoreboard objectives add pre_health dummy
+    scoreboard objectives add health health "体力"
+    scoreboard objectives add pre_health dummy "元体力"
 
-    scoreboard objectives add skeleton dummy
-    scoreboard objectives add skeleton_attack dummy
-    scoreboard objectives add skeleton_attacked dummy
+    scoreboard objectives add skeleton dummy "スケルトン"
+    scoreboard objectives add skeleton_attack dummy "スケルトン攻撃回数"
+    scoreboard objectives add skeleton_attacked dummy "スケルトン攻撃された回数"
 
 ## 初期値
     ### トリガー
@@ -65,30 +65,41 @@
         execute as @a unless score @s skeleton_attack matches 0.. run scoreboard players set @s skeleton_attack 2
         execute unless score spyglass settings matches 0.. run scoreboard players set spyglass settings 1
         execute unless score speed settings matches 0.. run scoreboard players set speed settings 0
+        execute unless score hour settings matches 0.. run scoreboard players set hour settings 1
         execute unless score first_day settings matches 0.. run scoreboard players set first_day settings 600
+        execute unless score first_day_min settings matches 0.. run scoreboard players set first_day_min settings 0
+        execute unless score first_day_sec settings matches 0.. run scoreboard players set first_day_sec settings 30
         execute unless score one_day settings matches 0.. run scoreboard players set one_day settings 2400
+        execute unless score one_day_min settings matches 0.. run scoreboard players set one_day_min settings 2
+        execute unless score one_day_sec settings matches 0.. run scoreboard players set one_day_sec settings 0
 
     ### 一時的
         scoreboard players set date temporary 0
-        scoreboard players set hour temporary 0
+        scoreboard players set hour temporary 1
         scoreboard players set timer temporary 0
         scoreboard players set start temporary 0
         scoreboard players set deaths temporary 0
 
-## ゲームルールの変更
-    gamerule spawnRadius 0
-    gamerule keepInventory true
-    gamerule logAdminCommands false
-    gamerule announceAdvancements false
-    gamerule commandBlockOutput false
-    gamerule sendCommandFeedback false
-    gamerule showDeathMessages false
-    gamerule doMobSpawning false
-    gamerule doMobLoot false
-    gamerule doTraderSpawning false
-    gamerule doWardenSpawning false
-    gamerule doDaylightCycle false
-    gamerule doWeatherCycle false
+## 設定変更
+    ### ゲームルールの変更
+        gamerule spawnRadius 0
+        gamerule keepInventory true
+        gamerule logAdminCommands false
+        gamerule announceAdvancements false
+        gamerule commandBlockOutput false
+        gamerule sendCommandFeedback false
+        gamerule showDeathMessages false
+        gamerule doMobSpawning false
+        gamerule doMobLoot false
+        gamerule doTraderSpawning false
+        gamerule doWardenSpawning false
+        gamerule doDaylightCycle false
+        gamerule doWeatherCycle false
+
+    ### 初期設定
+        time set day
+        weather clear
+        difficulty easy
 
 ## チームの初期設定
     team add Werewolf "人狼"

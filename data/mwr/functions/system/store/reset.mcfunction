@@ -14,3 +14,5 @@
     scoreboard players set holy_cross price 2
     scoreboard players set eye_of_providence price 3
     scoreboard players set spellbook_of_tianxue price 1
+## メッセージ
+    tellraw @a[tag=op] ["",{"text": "[","color":"red","italic":false,"bold":true},{"text":"人狼ＲＰＧ","color":"red","italic":false},{"text":"] ","color":"red","italic":false,"bold":true},{"text":"ストアをリセットしました。"}]
