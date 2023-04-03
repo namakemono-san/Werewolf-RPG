@@ -1,4 +1,6 @@
 ## 削除
+    execute as @s[nbt={SelectedItem:{id:"minecraft:nether_star"}}] run particle minecraft:item nether_star ^ ^1.25 ^0.5 0.15 0.15 0.15 0 15
+    execute as @s[nbt={SelectedItem:{id:"minecraft:nether_star"}}] run playsound minecraft:entity.item.break master @s ~ ~ ~ 0.5
     execute as @s[nbt={SelectedItem:{id:"minecraft:nether_star"}}] run item replace entity @s weapon.mainhand with minecraft:air
 
 ## リセット
