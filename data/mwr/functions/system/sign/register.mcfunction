@@ -36,38 +36,33 @@ scoreboard players reset @s PlayerID
     execute as @s at @s run playsound minecraft:ui.button.click master @s ~ ~ ~
 
 ## 防具立てを設置
-    execute as @s if score @s PlayerID matches 14 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID14"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 13 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID13"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 12 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID12"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 11 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID11"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 10 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID10"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 9 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID9"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 8 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID8"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 7 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID7"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 6 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID6"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 5 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID5"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 4 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID4"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 3 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID3"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 2 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID2"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
-    execute as @s if score @s PlayerID matches 1 run execute if block ~ ~ ~ #signs run summon minecraft:armor_stand ~ ~-0.15 ~ {Tags:["PlayerID","PlayerID1"],Small:true,NoGravity:true,Silent:true,Invisible:true,DisabledSlots:4352}
+    execute as @s if score @s PlayerID matches 14 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_14
+    execute as @s if score @s PlayerID matches 13 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_13
+    execute as @s if score @s PlayerID matches 12 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_12
+    execute as @s if score @s PlayerID matches 11 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_11
+    execute as @s if score @s PlayerID matches 10 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_10
+    execute as @s if score @s PlayerID matches 9 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_9
+    execute as @s if score @s PlayerID matches 8 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_8
+    execute as @s if score @s PlayerID matches 7 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_7
+    execute as @s if score @s PlayerID matches 6 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_6
+    execute as @s if score @s PlayerID matches 5 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_5
+    execute as @s if score @s PlayerID matches 4 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_4
+    execute as @s if score @s PlayerID matches 3 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_3
+    execute as @s if score @s PlayerID matches 2 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_2
+    execute as @s if score @s PlayerID matches 1 run execute if block ~ ~ ~ #signs run function mwr:system/sign/set_armor/player_1
 
-## 向き変更
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=0] run tp @s ~ ~ ~ 0 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=1] run tp @s ~ ~ ~ 22.5 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=2] run tp @s ~ ~ ~ 45 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=3] run tp @s ~ ~ ~ 67.5 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=4] run tp @s ~ ~ ~ 90 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=5] run tp @s ~ ~ ~ 112.5 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=6] run tp @s ~ ~ ~ 135 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=7] run tp @s ~ ~ ~ 157.5 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=8] run tp @s ~ ~ ~ 180 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=9] run tp @s ~ ~ ~ 202.5 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=10] run tp @s ~ ~ ~ 225 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=11] run tp @s ~ ~ ~ 247.5 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=12] run tp @s ~ ~ ~ 270 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=13] run tp @s ~ ~ ~ 292.5 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=14] run tp @s ~ ~ ~ 315 0
-    execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=15] run tp @s ~ ~ ~ 337.5 0
-
-## 変換
-    schedule function mwr:system/sign/set_head 5t
+## 表示
+    execute as @a[scores={PlayerID=14}] run loot replace entity @e[type=armor_stand,tag=PlayerID14] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=13}] run loot replace entity @e[type=armor_stand,tag=PlayerID13] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=12}] run loot replace entity @e[type=armor_stand,tag=PlayerID12] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=11}] run loot replace entity @e[type=armor_stand,tag=PlayerID11] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=10}] run loot replace entity @e[type=armor_stand,tag=PlayerID10] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=9}] run loot replace entity @e[type=armor_stand,tag=PlayerID9] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=8}] run loot replace entity @e[type=armor_stand,tag=PlayerID8] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=7}] run loot replace entity @e[type=armor_stand,tag=PlayerID7] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=6}] run loot replace entity @e[type=armor_stand,tag=PlayerID6] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=5}] run loot replace entity @e[type=armor_stand,tag=PlayerID5] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=4}] run loot replace entity @e[type=armor_stand,tag=PlayerID4] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=3}] run loot replace entity @e[type=armor_stand,tag=PlayerID3] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=2}] run loot replace entity @e[type=armor_stand,tag=PlayerID2] armor.head loot mwr:player_head
+    execute as @a[scores={PlayerID=1}] run loot replace entity @e[type=armor_stand,tag=PlayerID1] armor.head loot mwr:player_head

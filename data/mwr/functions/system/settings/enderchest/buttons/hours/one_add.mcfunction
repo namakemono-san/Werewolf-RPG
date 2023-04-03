@@ -3,7 +3,7 @@
 
 ## 追加
     execute if score one_day settings matches 600..5400 run scoreboard players add one_day settings 600
-    function mwr:hour
+    function mwr:system/settings/enderchest/hour
 
 ## 切り替え
     function mwr:system/settings/enderchest/pages/clear
