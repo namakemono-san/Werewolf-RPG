@@ -2,7 +2,7 @@
     playsound minecraft:entity.item.pickup master namakemono_san ~ ~ ~ 0.5
 
 ## 取得
-    function mwr:book/spawner_launcher
+    function mwr:system/settings/book/spawner_launcher
 
 ## 切り替え
     function mwr:system/settings/enderchest/pages/clear
