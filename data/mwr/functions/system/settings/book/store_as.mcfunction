@@ -1,6 +1,6 @@
 ## 付与
-    function mwr:store/battle/give
-    function mwr:store/auxiliary/give
+    function mwr:system/store/battle/give
+    function mwr:system/store/auxiliary/give
 
 ## リセット
     scoreboard players set @s options 0

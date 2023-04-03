@@ -1,5 +1,5 @@
 ## 本を付与
-    function mwr:book/give
+    function mwr:system/settings/book/give
 
 ## リセット
     scoreboard players set @s items 0

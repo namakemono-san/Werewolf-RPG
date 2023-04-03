@@ -14,6 +14,7 @@
     scoreboard objectives add items trigger
     scoreboard objectives add options trigger
 
+    scoreboard objectives add change_sign dummy "看板変更"
     scoreboard objectives add price dummy "価格設定"
     scoreboard objectives add divide dummy "役職設定"
     scoreboard objectives add settings dummy "設定"
@@ -61,7 +62,7 @@
         execute unless score wolf_possession divide matches 0.. run scoreboard players set wolf_possession divide 0
 
     ### 設定
-        scoreboard players set @a menu_page 0
+        execute unless score spyglass settings matches 0.. run scoreboard players set @a menu_page 0
         execute as @a unless score @s skeleton_attack matches 0.. run scoreboard players set @s skeleton_attack 2
         execute unless score spyglass settings matches 0.. run scoreboard players set spyglass settings 1
         execute unless score speed settings matches 0.. run scoreboard players set speed settings 0
@@ -87,7 +88,6 @@
         gamerule logAdminCommands false
         gamerule announceAdvancements false
         gamerule commandBlockOutput false
-        gamerule sendCommandFeedback false
         gamerule showDeathMessages false
         gamerule doMobSpawning false
         gamerule doMobLoot false

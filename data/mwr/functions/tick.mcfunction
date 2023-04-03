@@ -13,8 +13,8 @@
 ## 毎tick動作
     effect give @a minecraft:resistance 1000000 0 true
 
-    function mwr:system/sign/remove
     function mwr:system/settings/tick
+    function mwr:system/sign/remove_head
     function mwr:system/item/spawn_launcher
 
 ## ゲーム中に動作する毎tick

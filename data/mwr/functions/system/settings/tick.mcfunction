@@ -18,8 +18,8 @@
 ## 本
     ### trigger
         execute as @a[scores={items=1..}] run function mwr:system/settings/book/items
-        execute as @a if score @s options matches 1 run function mwr:book/start_cb
-        execute as @a if score @s options matches 2 run function mwr:book/store_as
-        execute as @a if score @s options matches 3 run function mwr:book/spawner_launcher
-        execute as @a if score @s options matches 4 run function mwr:book/player_sign
-        execute as @a if score @s options matches 5 run function mwr:book/player_spawn
+        execute as @a if score @s options matches 1 run function mwr:system/settings/book/start_cb
+        execute as @a if score @s options matches 2 run function mwr:system/settings/book/store_as
+        execute as @a if score @s options matches 3 run function mwr:system/settings/book/spawner_launcher
+        execute as @a if score @s options matches 4 run function mwr:system/settings/book/player_sign
+        execute as @a if score @s options matches 5 run function mwr:system/settings/book/player_spawn

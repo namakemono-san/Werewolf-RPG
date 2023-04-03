@@ -70,4 +70,4 @@ scoreboard players reset @s PlayerID
     execute as @e[type=minecraft:armor_stand,tag=PlayerID] at @s if block ~ ~ ~ #signs[rotation=15] run tp @s ~ ~ ~ 337.5 0
 
 ## 変換
-    schedule function mwr:system/sign/head 4t
+    schedule function mwr:system/sign/set_head 5t
