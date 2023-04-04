@@ -22,10 +22,10 @@
 
 ## 占い
     execute if score start temporary matches 1 if score hour temporary matches 1 unless entity @s[nbt={SelectedItem:{id:"minecraft:golden_horse_armor"}}] if score @s fortune_teller_heart matches 1.. if score @s fortune_teller_heart_used matches 1 run tellraw @s ["",{"text": "[","color":"red","italic":false,"bold":true},{"text":"人狼ＲＰＧ","color":"red","italic":false},{"text":"] ","color":"red","italic":false,"bold":true},{"text":"占いは一夜につき一回のみです"}]
-    execute if score start temporary matches 1 if score hour temporary matches 1 unless entity @s[nbt={SelectedItem:{id:"minecraft:golden_horse_armor"}}] if score @s fortune_teller_heart matches 1.. unless score @s fortune_teller_heart_used matches 1 as @a[scores={PlayerID=5}] run function mwr:sign/system/fortune_teller_heart
+    execute if score start temporary matches 1 if score hour temporary matches 1 unless entity @s[nbt={SelectedItem:{id:"minecraft:golden_horse_armor"}}] if score @s fortune_teller_heart matches 1.. unless score @s fortune_teller_heart_used matches 1 as @a[scores={PlayerID=5}] run function mwr:system/sign/system/fortune_teller_heart
 
 ## 騎士の加護
-    execute if score start temporary matches 1 if score hour temporary matches 1 if entity @s[nbt={SelectedItem:{id:"minecraft:golden_horse_armor"}}] unless entity @s[scores={PlayerID=5}] as @a[scores={PlayerID=5}] run function mwr:sign/system/the_blessing_of_knighthood
+    execute if score start temporary matches 1 if score hour temporary matches 1 if entity @s[nbt={SelectedItem:{id:"minecraft:golden_horse_armor"}}] unless entity @s[scores={PlayerID=5}] as @a[scores={PlayerID=5}] run function mwr:system/sign/system/the_blessing_of_knighthood
 
 ## リセット
     tag @s remove clicked
