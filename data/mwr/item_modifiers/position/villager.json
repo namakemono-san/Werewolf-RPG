@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "デフォルト",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "replace": false
+    }
+]

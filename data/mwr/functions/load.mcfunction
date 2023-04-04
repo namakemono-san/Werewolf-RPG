@@ -28,6 +28,7 @@
     scoreboard objectives add Constant dummy
 
     scoreboard players set #20 Constant 20
+    scoreboard players set #100 Constant 100
     scoreboard players set #1200 Constant 1200
 
     scoreboard objectives add lance dummy "怨念の槍"

@@ -6,6 +6,10 @@ item replace entity @s enderchest.3 with lime_stained_glass_pane{display:{Name:'
 item replace entity @s enderchest.4 with lime_stained_glass_pane{display:{Name:'{"text":"+1","italic":false}'},NoStack:5,Menu:1b}
 item replace entity @s enderchest.5 with lime_stained_glass_pane{display:{Name:'{"text":"+1","italic":false}'},NoStack:6,Menu:1b}
 
+## 村人
+    item replace entity @s enderchest.10 with poppy{display:{Name:'{"text":"村人","italic":false,"color":"blue"}'},NoStack:11,Menu:1b}
+    item modify entity @s enderchest.10 mwr:position/villager
+
 ## 人狼
     execute if score werewolf divide matches 1 run item replace entity @s enderchest.11 with redstone{display:{Name:'{"text":"人狼","italic":false,"color":"dark_red"}'},NoStack:12,Menu:1b} 1
     execute if score werewolf divide matches 2 run item replace entity @s enderchest.11 with redstone{display:{Name:'{"text":"人狼","italic":false,"color":"dark_red"}'},NoStack:12,Menu:1b} 2
@@ -17,6 +21,7 @@ item replace entity @s enderchest.5 with lime_stained_glass_pane{display:{Name:'
     execute if score werewolf divide matches 8 run item replace entity @s enderchest.11 with redstone{display:{Name:'{"text":"人狼","italic":false,"color":"dark_red"}'},NoStack:12,Menu:1b} 8
     execute if score werewolf divide matches 9 run item replace entity @s enderchest.11 with redstone{display:{Name:'{"text":"人狼","italic":false,"color":"dark_red"}'},NoStack:12,Menu:1b} 9
     execute if score werewolf divide matches 10 run item replace entity @s enderchest.11 with redstone{display:{Name:'{"text":"人狼","italic":false,"color":"dark_red"}'},NoStack:12,Menu:1b} 10
+    item modify entity @s enderchest.11 mwr:position/werewolf
 
 ## 共犯者
     execute if score accomplice divide matches 0 run item replace entity @s enderchest.12 with barrier{display:{Name:'{"text":"共犯者","italic":false,"color":"gray"}'},NoStack:13,Menu:2b} 1
@@ -30,6 +35,7 @@ item replace entity @s enderchest.5 with lime_stained_glass_pane{display:{Name:'
     execute if score accomplice divide matches 8 run item replace entity @s enderchest.12 with gunpowder{display:{Name:'{"text":"共犯者","italic":false,"color":"gray"}'},NoStack:13,Menu:1b} 8
     execute if score accomplice divide matches 9 run item replace entity @s enderchest.12 with gunpowder{display:{Name:'{"text":"共犯者","italic":false,"color":"gray"}'},NoStack:13,Menu:1b} 9
     execute if score accomplice divide matches 10 run item replace entity @s enderchest.12 with gunpowder{display:{Name:'{"text":"共犯者","italic":false,"color":"gray"}'},NoStack:13,Menu:1b} 10
+    item modify entity @s enderchest.12 mwr:position/accomplice
 
 ## 吸血鬼
     execute if score vampire divide matches 0 run item replace entity @s enderchest.13 with barrier{display:{Name:'{"text":"吸血鬼","italic":false,"color":"light_purple"}'},NoStack:14,Menu:2b} 1
@@ -43,6 +49,7 @@ item replace entity @s enderchest.5 with lime_stained_glass_pane{display:{Name:'
     execute if score vampire divide matches 8 run item replace entity @s enderchest.13 with fermented_spider_eye{display:{Name:'{"text":"吸血鬼","italic":false,"color":"light_purple"}'},NoStack:14,Menu:1b} 8
     execute if score vampire divide matches 9 run item replace entity @s enderchest.13 with fermented_spider_eye{display:{Name:'{"text":"吸血鬼","italic":false,"color":"light_purple"}'},NoStack:14,Menu:1b} 9
     execute if score vampire divide matches 10 run item replace entity @s enderchest.13 with fermented_spider_eye{display:{Name:'{"text":"吸血鬼","italic":false,"color":"light_purple"}'},NoStack:14,Menu:1b} 10
+    item modify entity @s enderchest.13 mwr:position/vampire
 
 ## 狼憑き
     execute if score wolf_possession divide matches 0 run item replace entity @s enderchest.14 with barrier{display:{Name:'{"text":"狼憑き","italic":false,"color":"dark_purple"}'},NoStack:15,Menu:2b} 1
@@ -56,6 +63,7 @@ item replace entity @s enderchest.5 with lime_stained_glass_pane{display:{Name:'
     execute if score wolf_possession divide matches 8 run item replace entity @s enderchest.14 with wither_rose{display:{Name:'{"text":"狼憑き","italic":false,"color":"dark_purple"}'},NoStack:15,Menu:1b} 8
     execute if score wolf_possession divide matches 9 run item replace entity @s enderchest.14 with wither_rose{display:{Name:'{"text":"狼憑き","italic":false,"color":"dark_purple"}'},NoStack:15,Menu:1b} 9
     execute if score wolf_possession divide matches 10 run item replace entity @s enderchest.14 with wither_rose{display:{Name:'{"text":"狼憑き","italic":false,"color":"dark_purple"}'},NoStack:15,Menu:1b} 10
+    item modify entity @s enderchest.14 mwr:position/wolf_possession
 
 item replace entity @s enderchest.20 with red_stained_glass_pane{display:{Name:'{"text":"-1","italic":false}'},NoStack:21,Menu:1b}
 item replace entity @s enderchest.21 with red_stained_glass_pane{display:{Name:'{"text":"-1","italic":false}'},NoStack:22,Menu:1b}

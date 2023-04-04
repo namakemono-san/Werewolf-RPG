@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "最低人数: 1人",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "replace": false
+    }
+]
