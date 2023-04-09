@@ -54,6 +54,9 @@
         bossbar set mwr:timer color yellow
         bossbar set mwr:timer visible true
 
+        scoreboard players reset * en_route
+        scoreboard players set @a en_route 1
+
         scoreboard players set start temporary 1
 
     ### ゲームモード変更

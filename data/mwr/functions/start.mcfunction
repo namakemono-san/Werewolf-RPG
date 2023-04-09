@@ -8,6 +8,7 @@
         execute if score player temporary matches 3.. run execute unless predicate mwr:version/1.19.3 run function mwr:system/error/different_version
 
     ### 役職設定の確認
+        scoreboard players reset pos temporary
         execute if predicate mwr:version/1.19.3 if score player temporary matches 3.. run scoreboard players operation pos temporary += werewolf divide
         execute if predicate mwr:version/1.19.3 if score player temporary matches 3.. run scoreboard players operation pos temporary += vampire divide
         execute if predicate mwr:version/1.19.3 if score player temporary matches 3.. run scoreboard players operation pos temporary += accomplice divide

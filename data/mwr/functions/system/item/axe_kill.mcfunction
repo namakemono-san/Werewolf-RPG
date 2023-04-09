@@ -1,6 +1,3 @@
-## 昼の場合
-    execute if score hour temporary matches 0 run scoreboard players set @s axe_use 1
-
 ## 殴られたときの音
     playsound minecraft:item.totem.use master @a ~ ~1 ~ 0.5
 

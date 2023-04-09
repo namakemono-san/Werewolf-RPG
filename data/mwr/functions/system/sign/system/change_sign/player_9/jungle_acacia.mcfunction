@@ -1,6 +1,7 @@
 ## オークからトウヒ
     execute if score start temporary matches 0 if block ~ ~ ~ jungle_sign[rotation=0] run setblock ~ ~ ~ acacia_sign[rotation=0]
     execute if score start temporary matches 0 if block ~ ~ ~ jungle_sign[rotation=1] run setblock ~ ~ ~ acacia_sign[rotation=1]
+    execute if score start temporary matches 0 if block ~ ~ ~ dark_oak_sign[rotation=2] run setblock ~ ~ ~ mangrove_sign[rotation=2]
     execute if score start temporary matches 0 if block ~ ~ ~ jungle_sign[rotation=3] run setblock ~ ~ ~ acacia_sign[rotation=3]
     execute if score start temporary matches 0 if block ~ ~ ~ jungle_sign[rotation=4] run setblock ~ ~ ~ acacia_sign[rotation=4]
     execute if score start temporary matches 0 if block ~ ~ ~ jungle_sign[rotation=5] run setblock ~ ~ ~ acacia_sign[rotation=5]

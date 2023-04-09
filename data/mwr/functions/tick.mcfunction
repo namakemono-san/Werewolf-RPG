@@ -19,3 +19,8 @@
 
 ## ゲーム中に動作する毎tick
     execute if score start temporary matches 1 run function mwr:system/tick
+
+## 検証
+    function mwr:system/kill_log
+    scoreboard players reset @e[scores={log_death=1..}] log_death
+    scoreboard players reset @e[scores={log_kill=1..}] log_kill

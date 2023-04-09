@@ -1,6 +1,7 @@
 ## オークからトウヒ
     execute if score start temporary matches 0 if block ~ ~ ~ mangrove_sign[rotation=0] run setblock ~ ~ ~ crimson_sign[rotation=0]
     execute if score start temporary matches 0 if block ~ ~ ~ mangrove_sign[rotation=1] run setblock ~ ~ ~ crimson_sign[rotation=1]
+    execute if score start temporary matches 0 if block ~ ~ ~ mangrove_sign[rotation=2] run setblock ~ ~ ~ crimson_sign[rotation=2]
     execute if score start temporary matches 0 if block ~ ~ ~ mangrove_sign[rotation=3] run setblock ~ ~ ~ crimson_sign[rotation=3]
     execute if score start temporary matches 0 if block ~ ~ ~ mangrove_sign[rotation=4] run setblock ~ ~ ~ crimson_sign[rotation=4]
     execute if score start temporary matches 0 if block ~ ~ ~ mangrove_sign[rotation=5] run setblock ~ ~ ~ crimson_sign[rotation=5]

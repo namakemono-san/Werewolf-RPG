@@ -21,7 +21,10 @@
     scoreboard objectives add PlayerID dummy "プレイヤー"
     scoreboard objectives add temporary dummy "一時的"
     scoreboard objectives add menu_page dummy "メニュー"
+    scoreboard objectives add en_route dummy "途中参加者"
     scoreboard objectives add death deathCount "死亡数"
+    scoreboard objectives add log_death deathCount "キルログ（デス数）"
+    scoreboard objectives add log_kill playerKillCount "キルログ（キル数）"
 
     function mwr:system/store/reset
 

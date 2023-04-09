@@ -10,8 +10,8 @@
 
 ## いらないものを削除
     clear @a minecraft:glass_bottle
-    execute as @a[team=!Werewolf] run clear @s minecraft:stone_axe
-    execute as @a[team=!Accomplice] run clear @s minecraft:end_crystal
+    clear @a[team=!Werewolf] minecraft:stone_axe
+    clear @a[team=!Accomplice] minecraft:end_crystal
 
 ## アイテムを使用する
     function mwr:system/noon_axe
@@ -25,10 +25,14 @@
     execute as @a[nbt={Inventory:[{id:"minecraft:heart_of_the_sea"}]}] run function mwr:system/item/fortune_teller_heart
 
 ## スケルトンの殴った回数（仮）
-    execute as @e[type=minecraft:skeleton] at @s if score @p[distance=..5,limit=1,sort=nearest] skeleton_attack <= @s skeleton_attacked run kill @s
+    execute as @e[type=minecraft:skeleton] at @s if score @p[distance=..7,limit=1,sort=nearest] skeleton_attack <= @s skeleton_attacked run kill @s
     execute as @e[type=minecraft:skeleton] store result score @s health run data get entity @s Health 1
     execute as @e[type=minecraft:skeleton] if score @s pre_health > @s health run scoreboard players add @s skeleton_attacked 1
     execute as @e[type=minecraft:skeleton] store result score @s pre_health run scoreboard players get @s health
+
+## 途中参加者
+    execute as @a unless score @s en_route matches 1 run gamemode spectator @s
+    execute as @a unless score @s en_route matches 1 run tag @s add deaths
 
 ## HUD
     execute as @a[scores={fortune_teller_heart=1..}] run function mwr:system/hud/fortune_telling
